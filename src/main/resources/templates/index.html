@@ -24,6 +24,16 @@
                         <th>Student Email</th>
                         <th>Action</th>
                     </tr>
+                    <tbody>
+                        <tr th:each="mList:${studentList}">
+                            <td th:text="mList.getStid()"></td>
+                            <td th:text="mList.getStFname()"></td>
+                            <td th:text="mList.getStLname()"></td>
+                            <td th:text="mList.getStAddress()"></td>
+                            <td th:text="mList.getStEmail()"></td>
+                        </tr>
+
+                    </tbody>
                 </thead>
             </table>
       </div>
