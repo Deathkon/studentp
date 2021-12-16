@@ -14,6 +14,7 @@ public class StudentController {
 
     public List<Stidentification> showData() {
         List<Stidentification> studentList = new ArrayList<>();
+        studentList = studentRepository.findAll();
         return studentList;
     }
 
