@@ -4,6 +4,7 @@ import com.studentp.studentp.repository.StudentRepository;
 import com.studentp.studentp.entity.Stidentification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -11,11 +12,11 @@ import java.util.ArrayList;
 public class StudentController {
     @Autowired
     private StudentRepository studentRepository;
-
-    public List<Stidentification> showData() {
+    public String showData(Model model) {
         List<Stidentification> studentList = new ArrayList<>();
         studentList = studentRepository.findAll();
-        return studentList;
+        model.addAttribute("mList", studentList);
+        return "index";
     }
 
 }
