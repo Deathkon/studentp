@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th= "http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -25,12 +25,12 @@
                         <th>Action</th>
                     </tr>
                     <tbody>
-                        <tr th:each="mList:${StudentList}">
-                            <td th:text="mList.getStid()"></td>
-                            <td th:text="mList.getStFname()"></td>
-                            <td th:text="mList.getStLname()"></td>
-                            <td th:text="mList.getStAddress()"></td>
-                            <td th:text="mList.getStEmail()"></td>
+                        <tr th:each="mList:${mList}">
+                            <td th:text="${mList.getStid()}"></td>
+                            <td th:text="${mList.getStFname()}"></td>
+                            <td th:text="${mList.getStLname()}"></td>
+                            <td th:text="${mList.getStAddress()}"></td>
+                            <td th:text="${mList.getStEmail()}"></td>
                         </tr>
 
                     </tbody>

@@ -12,11 +12,11 @@ import java.util.ArrayList;
 @Controller
 public class StudentController {
     @Autowired
-    private StudentRepository studentRepository;
+    private StudentRepository StudentRepository;
     @GetMapping("/")
     public String showData(Model model) {
         List<Stidentification> studentList = new ArrayList<>();
-        studentList = studentRepository.findAll();
+        studentList = StudentRepository.findAll();
         model.addAttribute("mList", studentList);
         return "index";
     }
