@@ -6,19 +6,19 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "student_Records")
+// @Table(name = "student_Records")
 public class Stidentification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Stud_id")
+    @Column(nullable = false, unique = true)
     private Integer stid;
-    @Column(name = "Stud_Fname")
+    @Column(nullable = false)
     private String stFname;
-    @Column(name = "Stud_Lname")
+    @Column(nullable = false)
     private String stLname;
-    @Column(name = "Stud_Address")
+    @Column(nullable = false)
     private String stAddress;
-    @Column(name = "Stud_Email")
+    @Column(nullable = false)
     private String stEmail;
 
     public Stidentification(Integer stid, String stFname, String stLname, String stAddress, String stEmail) {
