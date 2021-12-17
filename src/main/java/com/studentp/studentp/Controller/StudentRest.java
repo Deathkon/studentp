@@ -6,7 +6,12 @@ import java.util.Optional;
 import com.studentp.studentp.entity.Stidentification;
 import com.studentp.studentp.service.StudentService;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,16 +28,19 @@ public class StudentRest {
         return studentService.findAllStudents();
     }
     @GetMapping("/{id}")
-    public Optional<Stidentification> findStudentById(Integer id) {
-        return studentService.findStudentById(id);
+    public Optional<Stidentification> findStudentById(@PathVariable("stid") Integer stid) {
+        return studentService.findStudentById(stid);
     }
-    public Stidentification saveStudentById(Stidentification Stidentification) {
+    @PostMapping
+    public Stidentification saveStudentById(@RequestBody Stidentification Stidentification) {
         return studentService.saveStudentById(Stidentification);
     }
-    public Stidentification updateStudentById(Stidentification Stidentification) {
+    @PutMapping
+    public Stidentification updateStudentById(@RequestBody Stidentification Stidentification) {
         return studentService.updateStudentById(Stidentification);
     }
-    public void deleteStudentById(Integer id) {
-        studentService.deleteStudentById(id);
+    @DeleteMapping
+    public void deleteStudentById(Integer stid) {
+        studentService.deleteStudentById(stid);
     }
 }

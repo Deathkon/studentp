@@ -8,12 +8,12 @@ import com.studentp.studentp.entity.Stidentification;
 public interface StudentService {
     List<Stidentification> findAllStudents();
 
-    Optional<Stidentification> findStudentById(Integer id);
+    Optional<Stidentification> findStudentById(Integer stid);
 
     Stidentification saveStudentById(Stidentification Stidentification);
 
     Stidentification updateStudentById(Stidentification Stidentification);
 
-    void deleteStudentById(Integer id);
+    void deleteStudentById(Integer stid);
 
 }

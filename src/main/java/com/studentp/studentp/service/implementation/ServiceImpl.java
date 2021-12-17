@@ -23,8 +23,8 @@ return studentRepository.findAll();
 }
 
 @Override
-public Optional<Stidentification> findStudentById(Integer id) {
-return studentRepository.findById(id);
+public Optional<Stidentification> findStudentById(Integer stid) {
+return studentRepository.findById(stid);
 }
 
 @Override
