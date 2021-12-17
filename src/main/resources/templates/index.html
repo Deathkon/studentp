@@ -17,8 +17,10 @@
     <!-- table with column Employee ID,First Name,Last Name, Phone Number and Address -->
     <div class="container-fluid">
       <h1>Student Records</h1>
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">NEW
-        USER</button>
+      <div class="add-button mb-3 d-md-flex justify-content-md-end">
+      <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">ADD</button>
+      </div>
+      <div class="table">
       <table class="table table-bordered table-striped table-responsive table-hover">
         <thead class="table-dark">
           <tr>
@@ -42,32 +44,42 @@
         </thead>
       </table>
     </div>
+  </div>
+  <form>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Create/Add New Student</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                <input type="text" class="form-control" id="recipient-name">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="fname" placeholder="First Name">
+                <label for="fname">First Name</label>
               </div>
-              <div class="mb-3">
-                <label for="message-text" class="col-form-label">Message:</label>
-                <textarea class="form-control" id="message-text"></textarea>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="lname" placeholder="Last Name">
+                <label for="lname">Last Name</label>
               </div>
-            </form>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="saddress" placeholder="Student Address">
+                <label for="saddress">Student Address</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="semail" placeholder="Student Email">
+                <label for="semail">Student Email</label>
+              </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Send message</button>
+            <button class="btn btn-warning" type="reset" value="Reset">Reset</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send message</button>
           </div>
         </div>
       </div>
     </div>
+  </form>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
