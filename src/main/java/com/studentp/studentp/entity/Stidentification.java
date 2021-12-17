@@ -34,21 +34,42 @@ public class Stidentification {
         return this.stid;
     }
 
+    public void setStid(Integer stid) {
+        this.stid = stid;
+    }
+
     public String getStFname() {
         return this.stFname;
+    }
+
+    public void setStFname(String stFname) {
+        this.stFname = stFname;
     }
 
     public String getStLname() {
         return this.stLname;
     }
 
+    public void setStLname(String stLname) {
+        this.stLname = stLname;
+    }
+
     public String getStAddress() {
         return this.stAddress;
+    }
+
+    public void setStAddress(String stAddress) {
+        this.stAddress = stAddress;
     }
 
     public String getStEmail() {
         return this.stEmail;
     }
+
+    public void setStEmail(String stEmail) {
+        this.stEmail = stEmail;
+    }
+
 
     public Stidentification() {
     }
