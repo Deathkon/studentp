@@ -13,6 +13,7 @@ import java.util.ArrayList;
 public class StudentController {
     @Autowired
     private StudentRepository StudentRepository;
+
     @GetMapping("/")
     public String showData(Model model) {
         List<Stidentification> studentList = new ArrayList<>();

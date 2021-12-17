@@ -1,4 +1,5 @@
 package com.studentp.studentp.entity;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -48,6 +49,7 @@ public class Stidentification {
     public String getStEmail() {
         return this.stEmail;
     }
+
     public Stidentification() {
     }
 }
