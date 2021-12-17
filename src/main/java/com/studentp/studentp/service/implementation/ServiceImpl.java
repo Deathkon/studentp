@@ -1,43 +1,47 @@
-package com.studentp.studentp.service.implementation;
+// package com.studentp.studentp.service.implementation;
 
-import java.util.List;
+// import java.util.List;
+// import java.util.Optional;
 
-import com.studentp.studentp.entity.Stidentification;
-import com.studentp.studentp.service.StudentService;
+// import com.studentp.studentp.entity.Stidentification;
+// import com.studentp.studentp.repository.StudentRepository;
+// import com.studentp.studentp.service.StudentService;
 
-import org.springframework.stereotype.Service;
+// import org.springframework.stereotype.Service;
 
-@Service
-public class ServiceImpl implements StudentService {
+// @Service
+// public class ServiceImpl implements StudentService {
 
-    @Override
-    public List<Stidentification> findAllStudents() {
-        // TODO Auto-generated method stub
-        return null;
-    }
+// private final StudentRepository studentRepository;
 
-    @Override
-    public Stidentification findStudentById(Integer id) {
-        // TODO Auto-generated method stub
-        return null;
-    }
+// public ServiceImpl(StudentRepository studentRepository) {
+// this.studentRepository = studentRepository;
+// }
+// @Override
+// public List<Stidentification> findAllStudents() {
+// return studentRepository.findAll();
+// }
 
-    @Override
-    public Stidentification saveStudentById(Stidentification Stidentification) {
-        // TODO Auto-generated method stub
-        return null;
-    }
+// @Override
+// public Optional<Stidentification> findStudentById(Integer id) {
+// return studentRepository.findById(id);
+// }
 
-    @Override
-    public Stidentification updateStudentById(Stidentification Stidentification) {
-        // TODO Auto-generated method stub
-        return null;
-    }
+// @Override
+// public Stidentification saveStudentById(Stidentification Stidentification) {
+// return studentRepository.save(Stidentification);
+// }
 
-    @Override
-    public void deleteStudentById(Integer id) {
-        // TODO Auto-generated method stub
-        
-    }
-    
-}
+// @Override
+// public Stidentification updateStudentById(Stidentification Stidentification)
+// {
+// return studentRepository.save(Stidentification);
+// }
+
+// @Override
+// public void deleteStudentById(Integer id) {
+// studentRepository.deleteById(id);
+
+// }
+
+// }

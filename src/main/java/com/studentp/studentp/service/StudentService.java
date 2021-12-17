@@ -1,18 +1,19 @@
-package com.studentp.studentp.service;
+// package com.studentp.studentp.service;
 
-import java.util.List;
+// import java.util.List;
+// import java.util.Optional;
 
-import com.studentp.studentp.entity.Stidentification;
+// import com.studentp.studentp.entity.Stidentification;
 
-public interface StudentService {
-    List<Stidentification> findAllStudents();
+// public interface StudentService {
+//     List<Stidentification> findAllStudents();
 
-    Stidentification findStudentById(Integer id);
+//     Optional<Stidentification> findStudentById(Integer id);
 
-    Stidentification saveStudentById(Stidentification Stidentification);
+//     Stidentification saveStudentById(Stidentification Stidentification);
 
-    Stidentification updateStudentById(Stidentification Stidentification);
+//     Stidentification updateStudentById(Stidentification Stidentification);
 
-    void deleteStudentById(Integer id);
+//     void deleteStudentById(Integer id);
 
-}
+// }
