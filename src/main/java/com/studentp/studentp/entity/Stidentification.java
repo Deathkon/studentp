@@ -7,11 +7,11 @@ import javax.persistence.*;
 
 
 @Entity
-// @Table(name = "Student_TBL")
+@Table(name = "Student_TBL")
 public class Stidentification {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false, unique = true)
+    @Column(unique = true)
     private Integer stid;
     @Column(nullable = false)
     private String stFname;
