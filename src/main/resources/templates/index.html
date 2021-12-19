@@ -39,8 +39,12 @@
               <td th:text="${mList.getStLname()}"></td>
               <td th:text="${mList.getStAddress()}"></td>
               <td th:text="${mList.getStEmail()}"></td>
+              <td th:action="@{/update}" method="get" th:object="${student}">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">Edit</button>
+                <button type="button" class="btn btn-danger mr-2">Delete</button>
+              </td>
             </tr>
-
           </tbody>
           </thead>
         </table>
